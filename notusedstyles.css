@@ -1,0 +1,114 @@
+
+/* <div class="recent-book">
+<div class="section-inner_wrapper">
+    <div class="recent-book_wrapper">
+        <h2>System Failure</h2>
+        <p>Where survival is a choice… A tantalizing blend of Science Fiction, Fantasy, and Romance</p>
+        <p>Avelyn Pierce never expected to survive long enough to leave Earth, but when she risks everything
+            to stow away on the last spacecraft alongside her younger brother Noah, survival becomes more
+            complex than she ever imagined. Fleeing a dying planet, they find themselves stranded on an
+            uncharted world where nothing is as it seems. Strange, towering forests stretch towards an alien
+            sky, hiding creatures that blend metal and flesh, and the air itself hums with secrets too
+            dangerous to uncover.</p>
+        <div class="float-right" >
+            <img class="float-right_img" src="./assets/System Failure (eBook).png" alt="">
+        </div>
+        <p class="half-width_p">Beside Avelyn is Alex, a brooding, battle-hardened pilot who views her as a
+            liability from the
+            start. Unimpressed by her fragile appearance, Alex quickly discovers that there’s more to her
+            than meets the eye. Both must navigate their distrust for each other while trying to protect
+            Noah, whose presence on the ship was never intended and puts all their lives at risk.</p>
+
+        <p class="half-width_p">With humanity’s fate hanging in the balance and a planet filled with strange
+            lifeforms—some of
+            which seem more predator than prey—the trio must face dangers beyond their imagination. As
+            Avelyn proves her worth in this perilous world, she and Alex will have to reckon with a truth
+            they can’t outrun: the real threat might not be from the creatures lurking in the alien
+            wilderness but from within their own group.</p>
+
+        <p class="half-width_p">The race for survival begins, and in a world where everything could kill
+            them, they’ll need each
+            other more than ever.</p>
+            <div class="float-right_button">Read Now</div>
+    </div>
+</div>
+<div class="background-circle_large"></div>
+</div> */
+
+
+
+
+
+/* .recent-book {
+    position: relative;
+}
+
+.recent-book .section-inner_wrapper {
+    padding: 60px 25px;
+}
+
+.recent-book_wrapper {
+    width: clamp(100px, 100%, 550px);
+    margin: auto;
+    margin-bottom: 5vh;
+    color: var(--backgroundOne);
+    position: relative;
+    z-index: 100;
+}
+
+.recent-book_wrapper p {
+    margin-bottom: 10px;
+}
+
+.float-right {
+    width: clamp(200px, 50%, 300px);
+    float: right;
+    margin: 10px;
+    margin-right: 0;
+
+    clear: both;
+}
+
+.float-right_img {
+    width: 100%;
+}
+
+.float-right_button {
+    width: clamp(50px, 100%, 250px);
+    background-color: var(--primary);
+    color: var(--text);
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.background-circle_large {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--tertiary);
+    z-index: 1;
+}
+
+
+@media screen and (min-width: 901px) {
+    .recent-book_wrapper {
+        margin-right: 15%;
+    }
+
+    .float-right {
+        width: clamp(400px, 100%, 400px);
+        position: absolute;
+        top: 0;
+        left: -80%;
+        float: none;
+    }
+
+    .background-circle_large {
+        transform: translate(-20%, -50%);
+    }
+} */
