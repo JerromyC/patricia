@@ -1,0 +1,302 @@
+h1:after {
+  /* position: absolute; */
+  content: "";
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  left: 30%;
+  top: 50%;
+  animation: name-typed 4s linear 1;
+  animation-fill-mode: forwards;
+}
+
+
+  @keyframes name-typed {
+  0% {
+    content: "P|";
+  }
+  8% {
+    content: "P|";
+  }
+  12% {
+    content: "Pa|";
+  }
+  16% {
+    content: "Pat|";
+  }
+  20% {
+    content: "Pate|";
+  }
+  24% {
+    content: "Pat|";
+  }
+  28% {
+    content: "Patr|";
+  }
+  32% {
+    content: "Patri|";
+  }
+  36% {
+    content: "Patric|";
+  }
+  40% {
+    content: "Patrici|";
+  }
+  44% {
+    content: "Patricia|";
+  }
+  48% {
+    content: "Patricia| ";
+  }
+  52% {
+    content: "Patricia r|";
+  }
+  56% {
+    content: "Patricia |";
+  }
+  60% {
+    content: "Patricia R|";
+  }
+  64% {
+    content: "Patricia Ru|";
+  }
+  68% {
+    content: "Patricia Rut|";
+  }
+  72% {
+    content: "Patricia Rutl|";
+  }
+  76% {
+    content: "Patricia Rutle|";
+  }
+  80% {
+    content: "Patricia Rutlef|";
+  }
+  84% {
+    content: "Patricia Rutlefg|";
+  }
+  88% {
+    content: "Patricia Rutlef|";
+  }
+  92% {
+    content: "Patricia Rutle|";
+  }
+  96% {
+    content: "Patricia Rutled|";
+  }
+  98% {
+    content: "Patricia Rutledg|";
+  }
+  100% {
+    content: "Patricia Rutledge";
+  }
+}
+
+.sub-header:after {
+  /* position: absolute; */
+  content: "";
+  width: 100%;
+  height: 100%;
+  line-height: 48px;
+  left: 30%;
+  top: 50%;
+  animation: sub-typed 4s linear 1;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sub-typed {
+  0% {
+    content: "|";
+  }
+  2% {
+    content: "|";
+    color: black;
+  }
+  4% {
+    content: "|";
+    color: white;
+  }
+  6% {
+    content: "|";
+    color: black;
+  }
+  8% {
+    content: "|";
+    color: white;
+  }
+  10% {
+    content: "S|";
+  }
+  12% {
+    content: "St|";
+  }
+  14% {
+    content: "Sto|";
+  }
+  16% {
+    content: "Stor|";
+  }
+  18% {
+    content: "Story|";
+  }
+  20% {
+    content: "Storyt|";
+  }
+  22% {
+    content: "Storyte|";
+  }
+  24% {
+    content: "Storytel|";
+  }
+  26% {
+    content: "Storytell|";
+  }
+  28% {
+    content: "Storytelle|";
+  }
+  30% {
+    content: "Storyteller|";
+  }
+  32% {
+    content: "Storyteller |";
+  }
+  34% {
+    content: "Storyteller ||";
+  }
+  36% {
+    content: "Storyteller | |";
+  }
+  38% {
+    content: "Storyteller | V|";
+  }
+  40% {
+    content: "Storyteller | Vi|";
+  }
+  42% {
+    content: "Storyteller | Vis|";
+  }
+  44% {
+    content: "Storyteller | Visi|";
+  }
+  46% {
+    content: "Storyteller | Visio|";
+  }
+  48% {
+    content: "Storyteller | Vision|";
+  }
+  50% {
+    content: "Storyteller | Visiona|";
+  }
+  52% {
+    content: "Storyteller | Visionar|";
+  }
+  54% {
+    content: "Storyteller | Visionary|";
+  }
+  56% {
+    content: "Storyteller | Visionary |";
+  }
+  58% {
+    content: "Storyteller | Visionary ||";
+  }
+  60% {
+    content: "Storyteller | Visionary | |";
+  }
+  62% {
+    content: "Storyteller | Visionary | C|";
+  }
+  64% {
+    content: "Storyteller | Visionary | Cr|";
+  }
+  66% {
+    content: "Storyteller | Visionary | Cre|";
+  }
+  68% {
+    content: "Storyteller | Visionary | Crea|";
+  }
+  70% {
+    content: "Storyteller | Visionary | Creat|";
+  }
+  72% {
+    content: "Storyteller | Visionary | Creato|";
+  }
+  74% {
+    content: "Storyteller | Visionary | Creator|";
+  }
+  76% {
+    content: "Storyteller | Visionary | Creator |";
+  }
+  78% {
+    content: "Storyteller | Visionary | Creator o|";
+  }
+  80% {
+    content: "Storyteller | Visionary | Creator of|";
+  }
+  82% {
+    content: "Storyteller | Visionary | Creator of |";
+  }
+  84% {
+    content: "Storyteller | Visionary | Creator of W|";
+  }
+  86% {
+    content: "Storyteller | Visionary | Creator of Wo|";
+  }
+  88% {
+    content: "Storyteller | Visionary | Creator of Wor|";
+  }
+  90% {
+    content: "Storyteller | Visionary | Creator of Worl|";
+  }
+  92% {
+    content: "Storyteller | Visionary | Creator of World|";
+  }
+  98% {
+    content: "Storyteller | Visionary | Creator of Worlds|";
+  }
+  100% {
+    content: "Storyteller | Visionary | Creator of Worlds";
+  }
+}
+
+.animate-text {
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.5s ease; /* Smooth fade-in */
+  position: relative;
+}
+
+.animate-text::after {
+  content: ""; /* Placeholder content */
+  display: inline-block;
+  animation: none; /* Default state */
+}
+
+@keyframes secondary-typed {
+  0% {
+      content: "|";
+  }
+  20% {
+      content: "A|";
+  }
+  40% {
+      content: "Ab|";
+  }
+  60% {
+      content: "Abo|";
+  }
+  80% {
+      content: "About|";
+  }
+  100% {
+      content: "About Me";
+  }
+}
+
+.animate-text.animate {
+  opacity: 1; /* Show text */
+}
+
+.animate-text.animate::after {
+  animation: secondary-typed 4s steps(10, end) forwards; /* Start animation */
+}
+

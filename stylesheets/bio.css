@@ -1,0 +1,26 @@
+#bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;    background-color: yellowgreen; */
+    height: 100vh;
+}
+
+.bio-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: auto;
+    padding: 25px;
+    margin: auto;
+    margin-left: 10vw;
+    /* background-color: rosybrown; */
+}
+
+/* Initial state */
+.bio-tile p {
+    color: white;
+    margin-bottom: 20px;
+}

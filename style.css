@@ -1,6 +1,11 @@
 /* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@import url(./stylesheets/nav.css);
+@import url(./stylesheets/bio.css);
+@import url(./stylesheets/text-styles.css);
+@import url(./stylesheets/backround.css);
+@import url(./stylesheets/keyboard.css);
 
 
 
@@ -27,39 +32,105 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
-    font-size: clamp(16pt, 20vw, 70pt);
-    line-height: 1;
-    font-weight: 500;
-    margin: auto;
-    margin-left: 0px;
-    margin-bottom: 0px;
-}
-
-h2 {
-    text-align: center;
-    font-size: clamp(14pt, 15vw, 30pt);
-    margin-bottom: 25px;
-}
-
 section {
     position: relative;
+    padding: 50px;
+    height: 100vh;
 }
 
-.section-inner_wrapper {
+.snap-container {
+    height: auto; /* Just to make the container taller than the viewport */
+    overflow-y: scroll; /* Allow vertical scrolling */
+    scroll-snap-type: y mandatory; /* Enable scroll snap behavior */
+    scroll-behavior: smooth; /* Smooth scroll behavior */
+
+}
+
+.snap-section {
+    scroll-snap-align: start;
+}
+
+#main {
+    /* display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas: 
+    "intro . profile-image"
+    ". .  profile-image"
+    "bio bio profile-image"
+    "bio bio profile-image"
+    "bio bio .";
+    grid-auto-rows: 50vh; */
+    background-color: orange;
+}
+
+#intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+/* 
+.profile-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+} */
+
+.profile-image_wrapper {
+    position: fixed; 
+    top: 50px;
+    right: 50px;
+    width: 25vw;
+    height: 25vw;
+}
+
+.face-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 25vw; /* Adjust size as needed */
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 2;
+}
+
+
+.moon-image {
+    position: absolute; /* Stacked on the same wrapper */
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.main-inner_wrapper {
     position: relative;
-    padding: 10px 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     z-index: 20;
+    width: 100%;
+    height: auto;
+    margin: 0 auto auto 0;
+    /* background-color: #B57EBC; */
 }
 
-.section-inner_wrapper p {
+.main-inner_wrapper p {
     margin-bottom: 10px;
 }
 
-.social_wrapper {
+.main-social_wrapper {
     display: flex;
     flex-direction: row;
     width: auto;
+    z-index: 100;
 }
 
 .social_link img {
@@ -68,96 +139,3 @@ section {
     margin-right: 10px;
 }
 
-.main-image_wrapper {
-    position: relative;
-    width: clamp(50px, 90vw, 400px);
-    height: auto;
-    margin: 10px auto 5vh 0;
-    border-radius: 0px 50% 50% 0px;
-}
-
-.face-image {
-    position: relative;
-    width: 100%;
-    z-index: 9;
-    box-shadow: inset 0 0 30px #000;
-    border-radius: 0px 50% 50% 0px;
-}
-
-.moon {
-    position: absolute;
-    top: -10%;
-    right: -15%;
-    width: 200px;
-
-    transition: transform 0.1s ease-out;
-}
-
-.round-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 60% 30%, #00000000 0%, #000000 80%);
-    border-radius: 0px 50% 50% 0px;
-    z-index: 10;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: clamp(100px, 80%, 600px);
-    margin: auto;
-    margin-bottom: 50px;
-}
-
-.navbar span {
-    font-size: clamp(11pt, 7vw, 30pt);
-}
-
-#content {
-    height: 1000px;
-    background-image: url(./assets/System\ Failure\ -\ No\ AI\ \(1500\ x\ 900\ px\)\ \(1\).png);
-    background-position: 80% 20%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom,
-            #000000b3 0%,
-            #0000001a 50%,
-            #000000b3 100%);
-    z-index: 10;
-}
-
-.floater {
-    width: auto;
-    max-width: 50%;
-    float: left;
-    clear: both;
-    margin: 20px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-}
-
-.floater img {
-    width: 100%;
-    box-shadow: -10px 0px 80px var(--text);
-}
-
-.button {
-    position: relative;
-    width: auto;
-    padding: 5px;
-    color: var(--text);
-    z-index: 30;
-    text-align: center;
-}

@@ -1,0 +1,27 @@
+nav {
+    position: fixed;
+    bottom: 0px;
+    left: 55px;
+    z-index: 100000;
+    width: clamp(100px, 10%, 600px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+nav a {
+    font-size: clamp(11pt, 7vw, 30pt);
+    cursor: pointer;
+    text-align: left;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+.nav-item {
+    display: inline-block;
+    cursor: pointer;
+  }

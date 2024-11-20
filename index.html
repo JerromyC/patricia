@@ -9,60 +9,58 @@
 </head>
 
 <body>
-    <section id="main" class="section">
-        <div class="section-inner_wrapper">
-            <h1>Patricia Rutledge</h1>
-            <div class="social_wrapper">
-                <div class="social_link"><img src="./assets/facebook-logo.png" alt=""></div>
-                <div class="social_link"><img src="./assets/instagram-logo.png" alt=""></div>
+    <nav class="navbar">
+        <a href="#bio">Bio</a>
+        <a>Works</a>
+        <a>Connect</a>
+    </nav>
+    <div class=".snap-container">
+        <section id="intro" class="snap-section">
+            <div class="main-inner_wrapper">
+                <h1></h1>
+                <span class="sub-header"></span>
+                <div class="main-social_wrapper">
+                    <div class="social_link"><img src="./assets/facebook-logo.png" alt=""></div>
+                    <div class="social_link"><img src="./assets/instagram-logo.png" alt=""></div>
+                </div>
             </div>
-            <div class="main-image_wrapper">
-                <img class="face-image" src="./assets/better-author-pic.webp">
-                <img class="moon" src="./assets/shaded-moon.png" alt="">
-                <div class="round-overlay"></div>
+        </section>
+        <section id="bio" class="snap-section">
+            <div class="bio-tile">
+                <h2>About Me</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere libero ex, accusantium esse
+                    temporibus magnam doloribus dolorem. Qui veritatis aliquam neque quo culpa labore ut libero.
+                    Perferendis, ab. Excepturi, quia.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere libero ex, accusantium esse
+                    temporibus magnam doloribus dolorem. Qui veritatis aliquam neque quo culpa labore ut libero.
+                    Perferendis, ab. Excepturi, quia.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere libero ex, accusantium esse
+                    temporibus magnam doloribus dolorem. Qui veritatis aliquam neque quo culpa labore ut libero.
+                    Perferendis, ab. Excepturi, quia.</p>
             </div>
-            <div class="navbar">
-                <span>Works</span>
-                <span>Bio</span>
-                <span>Connect</span>
-            </div>
+        </section>
+    </div>
+    <div class="profile-image">
+        <div class="profile-image_wrapper">
+            <img class="face-image" id="scroll-image" src="./assets/face.svg">
+            <img class="moon-image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+            <!-- <div class="round-overlay"></div> -->
         </div>
-    </section>
-    <section id="content" class="section">
-        <div class="section-inner_wrapper">
-            <h2>System Failure</h2>
-            <p>Where survival is a choice… A tantalizing blend of Science Fiction, Fantasy, and Romance</p>
-            <p>Avelyn Pierce never expected to survive long enough to leave Earth, but when she risks everything
-                to stow away on the last spacecraft alongside her younger brother Noah, survival becomes more
-                complex than she ever imagined. Fleeing a dying planet, they find themselves stranded on an
-                uncharted world where nothing is as it seems. Strange, towering forests stretch towards an alien
-                sky, hiding creatures that blend metal and flesh, and the air itself hums with secrets too
-                dangerous to uncover.</p>
-
-            <div class="floater">
-                <img src="./assets/System Failure - No AI (eBook) (1).png" alt="">
-                <div class="button">Read Now</div>
-            </div>
-
-            <p>Beside Avelyn is Alex, a brooding, battle-hardened pilot who views her as a
-                liability from the
-                start. Unimpressed by her fragile appearance, Alex quickly discovers that there’s more to her
-                than meets the eye. Both must navigate their distrust for each other while trying to protect
-                Noah, whose presence on the ship was never intended and puts all their lives at risk.</p>
-
-            <p>With humanity’s fate hanging in the balance and a planet filled with strange
-                lifeforms—some of
-                which seem more predator than prey—the trio must face dangers beyond their imagination. As
-                Avelyn proves her worth in this perilous world, she and Alex will have to reckon with a truth
-                they can’t outrun: the real threat might not be from the creatures lurking in the alien
-                wilderness but from within their own group.</p>
-
-            <p>The race for survival begins, and in a world where everything could kill
-                them, they’ll need each
-                other more than ever.</p>
-        </div>
-        <div class="gradient-overlay"></div>
-    </section>
+    </div>
+    <div class="background-container">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+        // use a script tag or an external JS file
+        document.addEventListener("DOMContentLoaded", (event) => {
+         gsap.registerPlugin(ScrollTrigger)
+         // gsap code here!
+        });
+       
+       </script>
     <script src="./script.js"></script>
 </body>
 

@@ -1,55 +1,47 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger);
 
+    // Set up ScrollTrigger for each section
+    const sections = document.querySelectorAll(".snap-section");
 
+    sections.forEach((section, index) => {
+        gsap.to(section, {
+            scrollTrigger: {
+                trigger: section,
+                start: "top top",    // Start the animation when the section hits the top of the viewport
+                end: "bottom top",   // End the animation when the bottom of the section hits the top
+                scrub: true,         // Tie the animation to the scroll position (smooth scrolling)
+                // markers: false,      // Disable debugging markers
+                pin: true,           // Pin the section during the scroll to simulate snap
+            }
+        });
+    });
 
+    // GSAP animation for opacity
+    gsap.to(".face-image", {
+        opacity: 1, // Fully visible at scroll
+        scrollTrigger: {
+            trigger: "#bio", // Trigger the animation when scrolling through the bio section
+            start: "top 90%", // Start when the top of #bio hits the top of the viewport
+            end: "center center", // End when the bottom of #bio hits the bottom of the viewport
+            scrub: true, // Smooth animation tied to scroll position
+            // markers: true, // Disable markers for debugging
+            duration: "2000ms"
+        }
+    });
 
-
-
-
-
-
-
-// const element = document.querySelector('.round-overlay');
-// let angle = 0;
-
-// function animate() {
-//     angle += 0.005 // Change this value to adjust the speed
-//     const x = 50 + 40 * Math.cos(angle); // Center X (adjust 40 for radius)
-//     const y = 50 + 40 * Math.sin(angle); // Center Y (adjust 40 for radius)
-    
-//     // Update background position based on x and y
-//     element.style.background = `radial-gradient(circle at ${x}% ${y}%, #00000000, #000000)`;
-
-//     // Call the animate function for the next frame
-//     requestAnimationFrame(animate);
-// }
-
-// animate(); // Start the animation
-
-// const overlay = document.querySelector('.round-overlay');
-
-// // Define min/max boundaries for gradient movement
-// const minX = 10; // minimum % for X-axis (10%)
-// const maxX = 90; // maximum % for X-axis (90%)
-// const minY = 10; // minimum % for Y-axis (10%)
-// const maxY = 90; // maximum % for Y-axis (90%)
-
-// window.addEventListener('mousemove', function (event) {
-//     // Get the mouse position relative to the viewport
-//     const mouseX = event.clientX;
-//     const mouseY = event.clientY;
-
-//     // Get the viewport dimensions
-//     const viewportWidth = window.innerWidth;
-//     const viewportHeight = window.innerHeight;
-
-//     // Calculate the percentage for gradient position, based on the cursor position
-//     let xPercent = (mouseX / viewportWidth) * 100;
-//     let yPercent = (mouseY / viewportHeight) * 100;
-
-//     // Apply min/max constraints
-//     xPercent = Math.max(minX, Math.min(xPercent, maxX));
-//     yPercent = Math.max(minY, Math.min(yPercent, maxY));
-
-//     // Update the radial gradient's center point
-//     overlay.style.background = `radial-gradient(circle at ${xPercent}% ${yPercent}%, #00000000, #000000)`;
-// });
+    // move image wrapper
+    gsap.to(".profile-image_wrapper", {
+        top: "25vh",
+        right: "10vw",
+        scrollTrigger: {
+            trigger: "#bio", // Trigger the animation when scrolling through the bio section
+            start: "top 90%", // Start when the top of #bio hits the top of the viewport
+            end: "center center", // End when the bottom of #bio hits the bottom of the viewport
+            scrub: true, // Smooth animation tied to scroll position
+            // markers: true, // Disable markers for debugging
+            duration: "2000ms"
+        },
+        toggleActions: "reverse none none none"
+    });
+});
